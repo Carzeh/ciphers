@@ -15,14 +15,22 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+
+        <div class="container">
         <h1>Welcome to the Ciphers Homepage</h1>
 
         <h4 class="section">Encryption</h4>
 
-        <div class="form-group">
-            <label for="otp">One Time Pad</label>
-            <input class="ui input" type="text" name="otp" id="otp" placeholder="Enter text to be encrypted">
+        <form class="ui form segment" name="otp" onsubmit="getOTP(this)">
+            <div class="field">
+                <label for="otp">One Time Pad</label>
+                <input class="ui input" type="text" name="otp" id="otp" placeholder="Enter text to be encrypted">
+            </div>
+
+            <button class="ui button" type="submit">Encrypt</button>
+        </form>
         </div>
+
 
         <script src="static/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.5/semantic.js"></script>
