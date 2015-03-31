@@ -6,7 +6,7 @@ def encrypt(message):
 	message = convert_to_binary(message)
 	key = generate_random_key(message)
 
-	cipher = "";
+	cipher = ""
 
 	for i in range(len(message)):
 		if message[i] == key[i]:
