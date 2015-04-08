@@ -1,4 +1,4 @@
 env/
-x*.pyc
+*.pyc
 .DS_Store
 .idea/
